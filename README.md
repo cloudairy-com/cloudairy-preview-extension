@@ -262,7 +262,7 @@ Cloudairy processes prompts and diagram generation requests to provide AI-powere
 
 For details see the Cloudairy Privacy Policy:
 
-https://cloudairy.com/privacy
+https://cloudairy.com/privacy-policy
 
 ---
 
@@ -272,7 +272,7 @@ If you encounter issues or need assistance:
 
 Support portal:
 
-https://cloudairy.com/support
+https://cloudairy.com/help-center
 
 ---
 
@@ -282,7 +282,7 @@ This extension is proprietary software owned by **Cloudairy**.
 
 Use of this extension is governed by the Cloudairy Terms of Service.
 
-https://cloudairy.com/terms
+https://cloudairy.com/terms-and-conditions
 
 ---
 
