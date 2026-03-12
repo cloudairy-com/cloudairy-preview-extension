@@ -1,0 +1,99 @@
+{
+  "name": "Cloudairy",
+  "displayName": "Cloudairy",
+  "description": "Preview .cld (Cloudairy) files with interactive diagrams visualization",
+  "icon": "resources/cloudairy-logo.png",
+  "version": "1.0.0",
+  "publisher": "cloudairy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/cloudairy-board-frontend.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onLanguage:cld",
+    "onLanguage:json",
+    "onCommand:cld.preview",
+    "onCommand:cld.previewSideBySide",
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cld.preview",
+        "title": "Cloudairy: Preview Diagram",
+        "category": "CLD",
+        "icon": "$(preview)"
+      },
+      {
+        "command": "cld.previewSideBySide",
+        "title": "Cloudairy: Preview Diagram",
+        "category": "CLD",
+        "icon": "$(split-horizontal)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceExtname == .cld",
+          "command": "cld.preview",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "when": "resourceExtname == .cld",
+          "command": "cld.preview",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "cld.preview",
+          "when": "resourceExtname == .cld || activeEditorLangId == cld || activeEditorLangId == json"
+        },
+        {
+          "command": "cld.previewSideBySide",
+          "when": "resourceExtname == .cld || activeEditorLangId == cld || activeEditorLangId == json"
+        }
+      ]
+    },
+    "languages": [
+      {
+        "id": "cld",
+        "aliases": [
+          "CLD",
+          "Cloudairy"
+        ],
+        "extensions": [
+          ".cld"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "echo 'No compilation needed for JavaScript extension'",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0"
+  },
+  "dependencies": {
+    "@dagrejs/dagre": "^2.0.4",
+    "d3-flextree": "^2.1.2",
+    "d3-hierarchy": "^3.1.2",
+    "dompurify": "^3.3.2",
+    "jsdom": "^28.1.0",
+    "lodash": "^4.17.23",
+    "mermaid": "^10.9.5"
+  }
+}
