@@ -7,7 +7,7 @@
   "publisher": "cloudairy",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/cloudairy-board-frontend.git"
+    "url": "https://github.com/cloudairy-com/cloudairy-preview-extension.git"
   },
   "license": "MIT",
   "engines": {
