@@ -1,10 +1,30 @@
 {
   "name": "Cloudairy",
   "displayName": "Cloudairy",
-  "description": "Preview .cld (Cloudairy) files with interactive diagrams visualization",
+  "description": "Build, edit, and preview Cloudairy diagrams directly inside Visual Studio Code with an interactive visualization editor.",
   "icon": "resources/cloudairy-logo.png",
   "version": "1.0.0",
   "publisher": "cloudairy",
+  "keywords": [
+    "cloudairy",
+    "diagram",
+    "diagrams",
+    "architecture",
+    "architecture diagram",
+    "cloud architecture",
+    "system design",
+    "flowchart",
+    "sequence diagram",
+    "uml",
+    "class diagram",
+    "entity relationship diagram",
+    "mind map",
+    "gantt chart",
+    "process diagram",
+    "visual editor",
+    "diagram editor",
+    "developer tools"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cloudairy-com/cloudairy-preview-extension.git"
@@ -14,9 +34,10 @@
     "vscode": "^1.74.0"
   },
   "categories": [
-    "Other",
-    "Visualization"
-  ],
+  "Visualization",
+  "Other",
+  "Programming Languages"
+],
   "activationEvents": [
     "onLanguage:cld",
     "onLanguage:json",
