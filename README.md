@@ -1,8 +1,8 @@
 # Cloudairy – AI Diagrams & Architecture for VS Code
 
-![Version](https://img.shields.io/visual-studio-marketplace/v/cloudairy.cloudairy)
-![Installs](https://img.shields.io/visual-studio-marketplace/i/cloudairy.cloudairy)
-![Rating](https://img.shields.io/visual-studio-marketplace/r/cloudairy.cloudairy)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/cloudairy.Cloudairy)](https://marketplace.visualstudio.com/items?itemName=cloudairy.Cloudairy)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/cloudairy.Cloudairy)](https://marketplace.visualstudio.com/items?itemName=cloudairy.Cloudairy)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/cloudairy.Cloudairy)](https://marketplace.visualstudio.com/items?itemName=cloudairy.Cloudairy)
 ![Platform](https://img.shields.io/badge/platform-cloudairy-blue)
 ![AI Powered](https://img.shields.io/badge/AI-powered-purple)
 
@@ -12,7 +12,7 @@ Cloudairy brings **AI-powered diagram generation and visual system design** into
 
 ---
 
-# Demo
+## Demo
 
 ![Cloudairy Demo](https://cloudairy-template-storage.s3.us-east-1.amazonaws.com/public/assets/Cloudairy.gif)
 
@@ -20,99 +20,37 @@ Generate architecture diagrams, flowcharts, and system visualizations instantly.
 
 ---
 
-# Features
+## Features
 
-## AI Diagram Generation
+### AI Diagram Generation
 
-Generate diagrams using natural language prompts.
+Generate diagrams using natural language prompts. Supported types:
 
-Supported diagrams:
-
-- Flowcharts  
-- Sequence diagrams  
-- ER diagrams  
-- Mind maps  
+- Flowcharts
+- Sequence diagrams
+- ER diagrams
+- Mind maps
 - System workflows
 - UML diagrams
-- Architecture diagrams  
-
-Example prompt:
+- Architecture diagrams
+- Cloud architecture (AWS, Azure, Kubernetes, Serverless, Microservices)
 
 ```
 Create a login authentication flow with validation and database access
 ```
 
-Cloudairy generates the diagram automatically.
+### Visual Documentation & Export
+
+Create visual documentation alongside your code and export diagrams to the Cloudairy workspace for collaborative editing, presentations, and sharing. Supports PNG, SVG, and PDF export.
 
 ---
 
-## Cloud Architecture Visualization
-
-Design and visualize cloud infrastructure.
-
-Supported architectures:
-
-- AWS architecture
-- Azure architecture
-- Kubernetes infrastructure
-- Serverless systems
-- Microservices architecture
-
-Example:
-
-```
-Generate AWS architecture with CloudFront, ALB, ECS services and RDS
-```
-
----
-
-## Workflow and System Design
-
-Visualize application logic quickly.
-
-Common examples:
-
-- CI/CD pipelines
-- authentication flows
-- API request flows
-- microservice communication
-- business process workflows
-
----
-
-## Visual Documentation
-
-Create visual documentation alongside your code.
-
-Export diagrams to Cloudairy workspace where teams can:
-
-- collaborate
-- refine diagrams
-- present system architecture
-- export diagrams
-- share with teams
-
----
-
-# Quick Start
+## Quick Start
 
 1. Install the **Cloudairy VS Code Extension**
-
-2. Open Command Palette
-
-```
-Ctrl + Shift + P
-```
-
-3. Run
-
-```
-Cloudairy: Generate Diagram
-```
-
-4. Enter a prompt describing your diagram.
-
-Example:
+2. Open Command Palette: `Ctrl + Shift + P`
+3. Run `Cloudairy: Preview Diagram`
+4. Enter a prompt describing your diagram
 
 ```
 Create a microservices architecture with API gateway, authentication service and PostgreSQL
@@ -122,232 +60,96 @@ Cloudairy generates the diagram instantly.
 
 ---
 
-# Example Prompts
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| Cloudairy: Preview Diagram | Generate and preview diagrams using AI |
+| Cloudairy: Preview Diagram (Side by Side) | Preview diagram in split view |
+
+---
+
+## Example Prompts
 
 ### Cloud Architecture
-
 ```
 Generate AWS architecture with API Gateway, Lambda, DynamoDB and S3
 ```
 
 ### Microservices Architecture
-
 ```
 Create microservices architecture with gateway, auth service, user service and PostgreSQL
 ```
 
 ### Flowchart
-
 ```
 Create a user login workflow with validation and authentication
 ```
 
 ### Sequence Diagram
-
 ```
 Generate payment processing sequence diagram between frontend, API and payment gateway
 ```
 
 ### ER Diagram
-
 ```
 Generate ER diagram for users, orders, products and payments
 ```
 
 ---
 
-# Commands
+## Workspace Integration
 
-| Command | Description |
-|--------|-------------|
-| Cloudairy: Generate Diagram | Generate diagrams using AI |
-| Cloudairy: Generate Architecture Diagram | Generate cloud architecture diagrams |
-| Cloudairy: Generate Flowchart | Generate workflow diagrams |
-| Cloudairy: Generate Sequence Diagram | Generate sequence diagrams |
-| Cloudairy: Export to Cloudairy Workspace | Export diagrams to Cloudairy |
+Diagrams generated in VS Code can be exported to the Cloudairy workspace for collaborative editing, diagram presentations, and team sharing.
+
+> **Note:** Workspace export functionality is available through the Cloudairy platform. Generated diagrams can be shared and exported via the Cloudairy web interface.
 
 ---
 
-# Supported Diagram Types
+## Requirements
 
-Cloudairy supports:
-
-- Flowcharts
-- Cloud architecture diagrams
-- Sequence diagrams
-- Entity relationship diagrams
-- Mind maps
-- Workflow diagrams
-- System design diagrams
+- Visual Studio Code v1.74.0 or higher
+- A [Cloudairy account](https://cloudairy.com) is required for workspace features
 
 ---
 
-# Using the Extension
-
-## Install Extension
-
-1. Open VS Code
-2. Go to Extensions
-3. Search **Cloudairy**
-4. Click Install
-
----
-
-## Generate Diagram
-
-Open command palette:
-
-```
-Ctrl + Shift + P
-```
-
-Run:
-
-```
-Cloudairy: Generate Diagram
-```
-
-Enter a prompt describing your system.
-
----
-
-# Cloudairy Workspace Integration
-
-Diagrams generated in VS Code can be exported to Cloudairy workspace.
-
-Benefits:
-
-- collaborative editing
-- diagram presentations
-- PNG export
-- SVG export
-- PDF export
-- team sharing
-- organized workspaces
-
----
-
-# Requirements
-
-A Cloudairy account is required to use workspace features.
-
-Create an account:
-
-https://cloudairy.com
-
----
-
-# Cloudairy Platform
-
-Cloudairy is an **AI-powered visual workspace for creation, collaboration, and system design**.
-
-Capabilities include:
-
-- AI diagram generation
-- cloud architecture visualization
-- collaborative visual workspaces
-- documentation diagrams
-- brainstorming and ideation
-- export to multiple formats
-
-Learn more:
-
-https://cloudairy.com
-
----
-
-# Privacy
+## Privacy
 
 Cloudairy processes prompts and diagram generation requests to provide AI-powered features.
-
-For details see the Cloudairy Privacy Policy:
-
-https://cloudairy.com/privacy-policy
+See the [Cloudairy Privacy Policy](https://cloudairy.com/privacy-policy) for details.
 
 ---
 
-# Support
+## Support
 
 If you encounter issues or need assistance:
+[Cloudairy Help Center](https://cloudairy.com/help-center) | [GitHub Issues](https://github.com/cloudairy-com/cloudairy-preview-extension/issues)
 
-Support portal:
-
-https://cloudairy.com/help-center
+Found this extension helpful? Please [leave a rating](https://marketplace.visualstudio.com/items?itemName=cloudairy.Cloudairy&ssr=false#review-details) on the marketplace!
 
 ---
 
-# License
+## License
 
 This extension is proprietary software owned by **Cloudairy**.
-
-Use of this extension is governed by the Cloudairy Terms of Service.
-
-https://cloudairy.com/terms-and-conditions
+Use is governed by the [Cloudairy Terms of Service](https://cloudairy.com/terms-and-conditions).
 
 ---
 
-# Changelog
+## Changelog
 
-## 1.0.0
+### 1.0.0
 
 Initial release.
 
-### Added
-
+**Added:**
 - AI diagram generation
-- cloud architecture diagrams
-- flowchart generation
-- sequence diagrams
-- workspace export
-- command palette integration
+- Cloud architecture diagrams
+- Flowchart generation
+- Sequence diagrams
+- Workspace export
+- Command palette integration
 
 ---
 
-## 1.0.1
-
-### Improvements
-
-- improved rendering performance
-- enhanced architecture prompts
-- improved workspace export
-
-### Fixes
-
-- command palette issue resolved
-- minor UI fixes
-
----
-
-# Extension Documentation
-
-The Cloudairy VS Code extension integrates diagram generation with the Cloudairy platform.
-
-Developers can generate visual system diagrams directly inside VS Code and export them to Cloudairy workspaces.
-
-The extension supports architecture design, workflow diagrams, system documentation, and collaboration.
-
-Example systems that can be visualized:
-
-- microservices architectures
-- serverless systems
-- event-driven architectures
-- CI/CD pipelines
-- API workflows
-
----
-
-# About Cloudairy
-
-Cloudairy is an **all-in-one AI workspace for creation, collaboration, and visual system design**.
-
-Developers and teams use Cloudairy to create:
-
-- architecture diagrams
-- flowcharts
-- ER diagrams
-- sequence diagrams
-- documentation visuals
-- collaborative workspaces
-
-Website  
-https://cloudairy.com
+*Cloudairy is an AI-powered visual workspace for creation, collaboration, and system design. Learn more at [cloudairy.com](https://cloudairy.com).*

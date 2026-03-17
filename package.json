@@ -5,6 +5,10 @@
   "icon": "resources/cloudairy-logo.png",
   "version": "1.0.0",
   "publisher": "cloudairy",
+  "galleryBanner": {
+    "color": "#1a1a2e",
+    "theme": "dark"
+  },
   "keywords": [
     "cloudairy",
     "diagram",
@@ -29,21 +33,20 @@
     "type": "git",
     "url": "https://github.com/cloudairy-com/cloudairy-preview-extension.git"
   },
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": [
-  "Visualization",
-  "Other",
-  "Programming Languages"
-],
+    "Visualization",
+    "Other",
+    "Programming Languages"
+  ],
   "activationEvents": [
     "onLanguage:cld",
     "onLanguage:json",
     "onCommand:cld.preview",
-    "onCommand:cld.previewSideBySide",
-    "onStartupFinished"
+    "onCommand:cld.previewSideBySide"
   ],
   "main": "./src/extension.js",
   "contributes": {
@@ -97,7 +100,11 @@
         "extensions": [
           ".cld"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./resources/cloudairy-logo.png",
+          "dark": "./resources/cloudairy-logo.png"
+        }
       }
     ]
   },
