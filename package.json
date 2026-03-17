@@ -3,7 +3,7 @@
   "displayName": "Cloudairy",
   "description": "Build, edit, and preview Cloudairy diagrams directly inside Visual Studio Code with an interactive visualization editor.",
   "icon": "resources/cloudairy-logo.png",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "publisher": "cloudairy",
   "galleryBanner": {
     "color": "#1a1a2e",
